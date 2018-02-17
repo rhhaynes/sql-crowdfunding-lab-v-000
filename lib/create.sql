@@ -1,4 +1,11 @@
-CREATE TABLE projects (id INTEGER PRIMARY KEY, title TEXT, category TEXT, funding_goal INTEGER, start_date TEXT, end_date TEXT);
+CREATE TABLE projects (
+  id           INTEGER PRIMARY KEY,
+  title        TEXT,
+  category     TEXT,
+  funding_goal INTEGER,
+  start_date   TEXT,
+  end_date     TEXT
+);
 
 CREATE TABLE users (
   id           INTEGER PRIMARY KEY,
@@ -6,7 +13,7 @@ CREATE TABLE users (
   age          INTEGER
 );
 
-CREATE TABLE pledge (
+CREATE TABLE pledges (
   amount       INTEGER,
   user_id      INTEGER,
   project_id   INTEGER
