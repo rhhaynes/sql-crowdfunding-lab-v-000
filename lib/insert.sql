@@ -1,3 +1,1 @@
-INSERT INTO projects () VALUES
-()
-()
+require_relative 'data.sql'
