@@ -1,5 +1,5 @@
 def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_name
-  %q{SELECT projects.title, pledges.amount
+  %q{SELECT projects.title, SUM(pledges.amount)
      FROM   projects
      JOIN   pledges ON pledges.project_id = projects.id
      GROUP BY projects.title;
