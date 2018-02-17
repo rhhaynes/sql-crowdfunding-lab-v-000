@@ -1,1 +1,3 @@
-INSERT INTO groceries VALUES (1, "Apples", 2, 1);
+INSERT INTO projects () VALUES
+()
+()
